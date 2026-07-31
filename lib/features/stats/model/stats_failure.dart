@@ -15,6 +15,7 @@ sealed class StatsFailure with _$StatsFailure, Failure {
   ({String type, String? message}) present(TranslationsEn t) {
     return switch (this) {
       StatsUnexpectedFailure() => (type: t.errors.unexpected, message: null),
+      _ => (type: t.errors.unexpected, message: null), // FIX: added wildcard for exhaustive matching
     };
   }
 }

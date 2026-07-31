@@ -43,6 +43,7 @@ class AddProfileModal extends HookConsumerWidget {
           : switch (currentWidget) {
               AddProfilePages.options => const AddProfileOptions(),
               AddProfilePages.manual => const AddProfileManual(),
+              _ => const AddProfileOptions(), // FIX: added wildcard for exhaustive matching
             },
     );
   }
