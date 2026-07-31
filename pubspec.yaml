@@ -4,7 +4,7 @@ publish_to: "none"
 version: 4.1.2+40102
 
 environment:
-  sdk: ^3.10.4
+  sdk: '>=3.4.0 <4.0.0'
   # ! IMPORTANT !
   # This SDK version is strictly required and must not be removed.
   # It is parsed/grep-ed by Makefile and Dockerfile to configure the build environment.
